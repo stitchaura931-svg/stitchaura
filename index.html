@@ -1,49 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>StitchAura</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Shopping Store</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    background:#f1f3f6;
+}
+
+.header{
+    background:#2874f0;
+    color:white;
+    padding:15px;
+    text-align:center;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.products{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    padding:30px;
+}
+
+.card{
+    background:white;
+    width:280px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    overflow:hidden;
+    text-align:center;
+    padding-bottom:20px;
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.product-name{
+    font-size:22px;
+    margin:15px 0 10px;
+    font-weight:bold;
+}
+
+.price{
+    color:green;
+    font-size:24px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.buy-btn{
+    background:#25D366;
+    color:white;
+    border:none;
+    padding:14px 30px;
+    font-size:18px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.buy-btn:hover{
+    opacity:0.9;
+}
+</style>
 </head>
+<body>
 
-<body style="margin:0; font-family:Arial; background:#fff8fc; text-align:center;">
+<div class="header">
+    My Shopping Store 🛍️
+</div>
 
-    <div style="background:#8e44ad; color:white; padding:30px;">
-        <h1>Welcome to StitchAura 💜</h1>
-        <p>Elegant Handmade Crochet & Aesthetic Creations</p>
-    </div>
+<div class="products">
 
-    <div style="padding:30px;">
-        <h2>Our Beautiful Collection ✨</h2>
+    <!-- Product 1 -->
+    <div class="card">
+        <img src="product1.jpg" alt="Product 1">
 
-        <img src="product1.jpg" width="250" style="border-radius:15px;"><br><br>
+        <div class="product-name">
+            Product Name Here
+        </div>
 
-        <h3>Handmade Floral Crochet Pouch 🌸</h3>
+        <div class="price">
+            ₹499
+        </div>
 
-        <p>
-            Premium quality handmade crochet pouch made with love,
-            perfect for gifts, daily use, and aesthetic collection.
-        </p>
-
-        <h2>Price: ₹499 only 💖</h2>
-
-        <a href="https://wa.me/917908267570">
-            <button style="
-                background:#25D366;
-                color:white;
-                border:none;
-                padding:15px 30px;
-                font-size:18px;
-                border-radius:12px;
-                cursor:pointer;">
-                Order on WhatsApp
+        <a href="https://wa.me/917908267570?text=I%20want%20to%20order%20this%20product">
+            <button class="buy-btn">
+                Buy Now
             </button>
         </a>
     </div>
 
-    <div style="background:#f1e1ff; padding:20px;">
-        <h3>Thank You For Visiting 💕</h3>
-        <p>Made with love & creativity</p>
+    <!-- Product 2 -->
+    <div class="card">
+        <img src="product2.jpg" alt="Product 2">
+
+        <div class="product-name">
+            Second Product
+        </div>
+
+        <div class="price">
+            ₹899
+        </div>
+
+        <a href="https://wa.me/917908267570?text=I%20want%20to%20order%20this%20product">
+            <button class="buy-btn">
+                Buy Now
+            </button>
+        </a>
     </div>
+
+</div>
 
 </body>
 </html>
